@@ -277,8 +277,6 @@ body {
 .contact-item {
   flex: 1;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
   margin-right: 20px; /* Add margin between items */
   box-sizing: border-box; /* Include padding and border in the width */
 }
