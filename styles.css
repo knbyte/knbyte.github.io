@@ -270,14 +270,16 @@ body {
 /* CSS for Contact Info */
 .contact-info {
   display: flex;
-  margin: 0 auto; /* Center the contact boxes */
-  max-width: 600px; /* Limit the maximum width of the contact boxes */
+  justify-content: center; /* Center the contact boxes horizontally */
+  margin: 50px auto; /* Add margin to the top and bottom, auto horizontally */
+  max-width: 800px; /* Limit the maximum width of the contact boxes */
 }
 
 .contact-item {
   flex: 1;
   padding: 20px;
-  margin-right: 20px; /* Add margin between items */
+  margin: 0 10px; /* Add margin between items */
+  box-sizing: border-box; /* Include padding and border in the width */
 }
 
 .contact-item:last-child {
