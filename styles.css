@@ -267,9 +267,10 @@ body {
 }
 
 
-/* CSS for Contact Info */
 .contact-info {
   display: flex;
+  margin: 0 auto; /* Center the contact boxes */
+  max-width: 600px; /* Limit the maximum width of the contact boxes */
 }
 
 .contact-item {
