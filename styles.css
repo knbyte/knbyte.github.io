@@ -267,7 +267,7 @@ body {
   margin-right: 0; /* Remove margin from the last icon */
 }
 
-
+/* CSS for Contact Info */
 .contact-info {
   display: flex;
   margin: 0 auto; /* Center the contact boxes */
@@ -276,9 +276,10 @@ body {
 
 .contact-item {
   flex: 1;
-  padding: 50px;
-  border: 0px;    
-  margin-right: 10px; /* Add margin between items */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 20px; /* Add margin between items */
   box-sizing: border-box; /* Include padding and border in the width */
 }
 
