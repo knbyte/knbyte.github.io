@@ -271,14 +271,12 @@ body {
 .contact-info {
   display: flex;
   margin: 0 auto; /* Center the contact boxes */
-  max-width: 600px; /* Limit the maximum width of the contact boxes */
 }
 
 .contact-item {
   flex: 1;
   padding: 20px;
   margin-right: 20px; /* Add margin between items */
-  box-sizing: border-box; /* Include padding and border in the width */
 }
 
 .contact-item:last-child {
