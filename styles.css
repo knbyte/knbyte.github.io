@@ -247,6 +247,10 @@ body {
 /*                                      CSS for Social Media Icons                                      */
 /********************************************************************************************************/
 
+#socials-and-contact {
+  padding: 50px 0;
+}
+
 .social-icons-container {
   text-align: center; /* Center the icons horizontally */
 }
