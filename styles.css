@@ -125,16 +125,32 @@ section {
 
   }
 
-/**************************************************************/
-/* Media query for smaller screens                            */
-/*                                                            */
-/* @media screen and (max-width: 768px) {                     */
-/*   section {                                                */
-/*     padding: 10px 0; Adjusted padding for smaller screens  */
-/*   }                                                        */
-/* }                                                          */
-/**************************************************************/
 
+/* Default padding for sections */
+section {
+  padding: 20px 0; /* Adjust as needed */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  section {
+    padding: 10px 0; /* Reduced padding for smaller screens */
+  }
+}
+
+/* Media query for tablets */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  section {
+    padding: 15px 0; /* Adjusted padding for tablets */
+  }
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 1025px) {
+  section {
+    padding: 30px 0; /* Increased padding for larger screens */
+  }
+}
 
   /*
   Fonts:
@@ -257,9 +273,9 @@ section {
 /********************************************************************************************************/
 /*                                      CSS for Social Media Icons                                      */
 /********************************************************************************************************/
-/* CSS for Social Media Icons */
 .social-icons-container {
   text-align: center; /* Center the icons horizontally */
+  margin: 50px auto; /* Default margin */
 }
 
 .social-icons,
@@ -280,7 +296,17 @@ section {
   margin-right: 0; /* Remove margin from the last icon */
 }
 
-/* CSS for Contact Info */
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .social-icons-container .social-icons li,
+  .social-icons-container .social-media-icons a {
+    margin-right: 20px; /* Adjusted spacing between icons for smaller screens */
+  }
+}
+
+/********************************************************************************************************/
+/*                                         CSS for Contact Info                                         */
+/********************************************************************************************************/
 .contact-info {
   display: flex;
   justify-content: center; /* Center the contact boxes horizontally */
@@ -294,6 +320,7 @@ section {
   margin: 0 25px; /* Adjusted margin between items */
   box-sizing: border-box; /* Include padding and border in the width */
 }
+
 .contact-item:first-child {
   margin-right: 50px; /* Add margin after the first contact item */
 }
