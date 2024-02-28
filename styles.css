@@ -125,12 +125,15 @@ section {
 
   }
 
-/* Media query for smaller screens */
-@media screen and (max-width: 768px) {
-  section {
-    padding: 10px 0; /* Adjusted padding for smaller screens */
-  }
-}
+/**************************************************************/
+/* Media query for smaller screens                            */
+/*                                                            */
+/* @media screen and (max-width: 768px) {                     */
+/*   section {                                                */
+/*     padding: 10px 0; Adjusted padding for smaller screens  */
+/*   }                                                        */
+/* }                                                          */
+/**************************************************************/
 
 
   /*
