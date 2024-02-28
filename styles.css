@@ -248,22 +248,26 @@ body {
 /********************************************************************************************************/
 
 
+/* CSS for Social Media Icons */
 .social-icons-container {
   text-align: center; /* Center the icons horizontally */
 }
 
-.social-icons {
+.social-icons,
+.social-media-icons {
   list-style: none; /* Remove default list styles */
   padding: 0;
   margin: 0;
 }
 
-.social-icons li {
+.social-icons li,
+.social-media-icons a {
   display: inline-block; /* Display list items in a row */
   margin-right: 10px; /* Add spacing between icons */
 }
 
-.social-icons li:last-child {
+.social-icons li:last-child,
+.social-media-icons a:last-child {
   margin-right: 0; /* Remove margin from the last icon */
 }
 
