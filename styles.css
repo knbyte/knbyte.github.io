@@ -85,7 +85,7 @@ body {
 /********************************************************************************************************/
   header {
 	text-align: center;
-	padding: 50px 0;
+	padding: 20px 0;
   background: rgb(226,226,226);
   background: linear-gradient(180deg, rgba(226,226,226,1) 23%, rgba(241,241,241,1) 75%, rgba(250,250,250,1) 100%);
   }
@@ -110,10 +110,10 @@ body {
 /********************************************************************************************************/
 /*                                         CSS for the Sections                                         */
 /********************************************************************************************************/ 
- section {
-	padding: 50px 0;
-	text-align: center;
-  }
+section {
+  padding: 20px 0; /* Reduced padding */
+  text-align: center;
+}
   
   section h2 {
     font-family: 'Courier New', Courier, monospace;
@@ -124,7 +124,15 @@ body {
     font-family: 'Courier New', Courier, monospace;
 
   }
-  
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  section {
+    padding: 10px 0; /* Adjusted padding for smaller screens */
+  }
+}
+
+
   /*
   Fonts:
   Jazz LET, fantasy;
@@ -136,7 +144,7 @@ body {
 /*                                      CSS for the About Section                 c                     */
 /********************************************************************************************************/
 #about {
-  padding: 80px;
+  padding: 20px;
 }
 
 /*.about-content {
