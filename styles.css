@@ -4,23 +4,20 @@
 
 /* Reset default margin and padding */
 * {
-	margin: 10;
+	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-  }
-  
-  
+}
+
 /********************************************************************************************************/
 /*                                          CSS for Background                                          */
 /********************************************************************************************************/
 
 body {
-  background: rgb(163,200,203);
-  background: linear-gradient(0deg, rgba(163,200,203,1) 0%, rgba(226,226,226,1) 57%, rgba(241,241,241,1) 75%, rgba(255,255,255,1) 100%);
-  background-size: cover; /* Cover the entire viewport */
-  font-family: Verdana, sans-serif; /* Default font family*/
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
+	background: rgb(163,200,203);
+	background: linear-gradient(0deg, rgba(163,200,203,1) 0%, rgba(226,226,226,1) 57%, rgba(241,241,241,1) 75%, rgba(255,255,255,1) 100%);
+	background-size: cover; /* Cover the entire viewport */
+	font-family: Verdana, sans-serif; /* Default font family*/
 }
 
 /********************************************************************************************************/
@@ -28,317 +25,160 @@ body {
 /********************************************************************************************************/
 
 #buttondark a {
-  display: inline-block;
-  background-color: #333;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+	display: inline-block;
+	background-color: #333;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
 }
 
 #buttondark a:hover {
-  background-color: #e2e2e2;
-  color: #333;
+	background-color: #e2e2e2;
+	color: #333;
 }
 
 #buttonlight a {
-  display: inline-block;
-  color: #333;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  background-color: rgba(100, 100, 100, 0.3);
-  border: 2px solid #1e192c;  
+	display: inline-block;
+	color: #333;
+	text-decoration: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	background-color: rgba(100, 100, 100, 0.3);
+	border: 2px solid #1e192c;
 }
 
 #buttonlight a:hover {
-  color: #ccc;
-  background-color: #1e192c;
+	color: #ccc;
+	background-color: #1e192c;
 }
 
 /********************************************************************************************************/
 /*                                      CSS for the Navigation Bar                                      */
 /********************************************************************************************************/
-  nav {
+
+nav {
 	background-color: #333;
 	padding: 10px 0;
-  }
-  
-  nav ul {
+}
+
+nav ul {
 	list-style-type: none;
 	text-align: center;
-  }
-  
-  nav ul li {
+}
+
+nav ul li {
 	display: inline;
 	margin-right: 20px;
-  }
-  
-  nav ul li a {
+}
+
+nav ul li a {
 	text-decoration: none;
 	color: #fff;
-  }
-  
+}
+
 /********************************************************************************************************/
 /*                                      CSS for the Header Section                                      */
 /********************************************************************************************************/
-  header {
+
+header {
 	text-align: center;
 	padding: 20px 0;
-  background: rgb(226,226,226);
-  background: linear-gradient(180deg, rgba(226,226,226,1) 23%, rgba(241,241,241,1) 75%, rgba(250,250,250,1) 100%);
-  }
-  
-  header h1 {
+	background: rgb(226,226,226);
+	background: linear-gradient(180deg, rgba(226,226,226,1) 23%, rgba(241,241,241,1) 75%, rgba(250,250,250,1) 100%);
+}
+
+header h1 {
 	font-size: 4.0em;
-  font-family: 'Courier New', Courier, monospace;
+	font-family: 'Courier New', Courier, monospace;
 	margin-bottom: 10px;
-  font-variant: small-caps;
-  }
-  
-  header p {
-  font-family: 'Courier New', Courier, monospace;
+	font-variant: small-caps;
+}
+
+header p {
+	font-family: 'Courier New', Courier, monospace;
 	font-size: 1.5em;
-  }
-  
-  header p2 {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 3em;
-    }
-      
+}
+
+header p2 {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 3em;
+}
+
 /********************************************************************************************************/
 /*                                         CSS for the Sections                                         */
-/********************************************************************************************************/ 
-section {
-  padding: 20px 0; /* Reduced padding */
-  text-align: center;
-}
-  
-  section h2 {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 2em;
-  }
-
-  section h1 {
-    font-family: 'Courier New', Courier, monospace;
-
-  }
-
+/********************************************************************************************************/
 
 /* Default padding for sections */
 section {
-  padding: 20px 0; /* Adjust as needed */
+	padding: 20px 0; /* Adjust as needed */
+	text-align: center;
+}
+
+section h2 {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 2em;
+}
+
+section h1 {
+	font-family: 'Courier New', Courier, monospace;
 }
 
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
-  section {
-    padding: 10px 0; /* Reduced padding for smaller screens */
-  }
+	section {
+		padding: 10px 0; /* Reduced padding for smaller screens */
+	}
 }
-
-/* Media query for tablets */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  section {
-    padding: 15px 0; /* Adjusted padding for tablets */
-  }
-}
-
-/* Media query for larger screens */
-@media screen and (min-width: 1025px) {
-  section {
-    padding: 30px 0; /* Increased padding for larger screens */
-  }
-}
-
-  /*
-  Fonts:
-  Jazz LET, fantasy;
-  Avantgarde, TeX Gyre Adventor, URW Gothic L, Avantgarde, sans-serif
-  */
-
 
 /********************************************************************************************************/
-/*                                      CSS for the About Section                 c                     */
+/*                                      CSS for the About Section                                      */
 /********************************************************************************************************/
+
 #about {
-  padding: 20px;
+	padding: 20px;
 }
 
-/*.about-content {
-  Any additional styles for your about content
-}
-*/
 /********************************************************************************************************/
 /*                                      CSS for the Resume Section                                      */
 /********************************************************************************************************/
+
 #resume {
-  padding: 50px 0;
+	padding: 50px 0;
 }
 
 #resume h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
+	font-size: 2em;
+	margin-bottom: 20px;
 }
-
 
 /********************************************************************************************************/
 /*                                      CSS for the Portfolio Items                                     */
 /********************************************************************************************************/
-  .portfolio-item {
+
+.portfolio-item {
 	margin-bottom: 30px;
-  }
-  
-  .portfolio-item img {
+}
+
+.portfolio-item img {
 	width: 100%;
 	max-width: 300px;
 	height: auto;
 	border-radius: 5px;
-  }
-  
-  .portfolio-item h3 {
+}
+
+.portfolio-item h3 {
 	margin-top: 15px;
-  }
-  
-  .portfolio-item p {
+}
+
+.portfolio-item p {
 	font-style: italic;
-  }
-  
+}
+
 /********************************************************************************************************/
 /*                                        CSS for the Contact Form                                      */
 /********************************************************************************************************/
-  form {
-	margin-top: 20px;
-  }
-  
-  label {
-	display: block;
-	margin-bottom: 5px;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  textarea {
-	width: 60%;
-	padding: 10px;
-	margin-bottom: 15px;
-  border: 2px solid #1e192c;  
-  background-color: rgba(100, 100, 100, 0.3);
-  border-radius: 5px;
-  }
-  
-  textarea {
-	height: 150px;
-  }
-  
-  button[type="submit"] {
-  display: inline-block;
-  color: #333;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  background-color: rgba(100, 100, 100, 0.3);
-  border: 2px solid #1e192c;  
-  cursor: pointer;
-  }
-  
-  button[type="submit"]:hover {
-	  color: #ccc;
-    background-color: #1e192c;
-  }
 
-
-  #buttonlight a {
-    display: inline-block;
-    color: #333;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: rgba(100, 100, 100, 0.3);
-    border: 2px solid #1e192c;  
-  }
-
-  
-/********************************************************************************************************/
-/*                                      CSS for the Footer Section                                      */
-/********************************************************************************************************/
-  footer {
-	background-color: #333;
-	color: #fff;
-	text-align: center;
-	padding: 20px 0;
-  }
-
-/********************************************************************************************************/
-/*                                      CSS for Social Media Icons                                      */
-/********************************************************************************************************/
-.social-icons-container {
-  text-align: center; /* Center the icons horizontally */
-  margin: 50px auto; /* Default margin */
-}
-
-.social-icons,
-.social-media-icons {
-  list-style: none; /* Remove default list styles */
-  padding: 0;
-  margin: 0;
-}
-
-.social-icons li,
-.social-media-icons a {
-  display: inline-block; /* Display list items in a row */
-  margin-right: 80px; /* Add spacing between icons */
-}
-
-.social-icons li:last-child,
-.social-media-icons a:last-child {
-  margin-right: 0; /* Remove margin from the last icon */
-}
-
-/* Media query for smaller screens */
-@media screen and (max-width: 768px) {
-  .social-icons-container .social-icons li,
-  .social-icons-container .social-media-icons a {
-    margin-right: 10px; /* Reduced spacing between icons for smaller screens */
-  }
-  
-  .social-icons-container .social-icons img,
-  .social-icons-container .social-media-icons img {
-    width: 30px; /* Smaller icon size for smaller screens */
-  }
-}
-
-/********************************************************************************************************/
-/*                                         CSS for Contact Info                                         */
-/********************************************************************************************************/
-.contact-info {
-  display: flex;
-  justify-content: center; /* Center the contact boxes horizontally */
-  margin: 50px auto; /* Add margin to the top and bottom, auto horizontally */
-  max-width: 800px; /* Limit the maximum width of the contact boxes */
-}
-
-.contact-item {
-  width: 200px; /* Fixed width for each contact item */
-  padding: 20px;
-  margin: 0 25px; /* Adjusted margin between items */
-  box-sizing: border-box; /* Include padding and border in the width */
-}
-
-.contact-item:first-child {
-  margin-right: 50px; /* Add margin after the first contact item */
-}
-
-.contact-item:last-child {
-  margin-right: 25px; /* Add margin to align with the last social media icon */
-}
-
-.contact-item h3 {
-  margin-bottom: 10px;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-.contact-item p {
-  margin: 0;
-}
+form {
+	margin-top
