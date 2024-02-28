@@ -1,7 +1,3 @@
-/********************************************************************************************************/
-/*                                                 CSS                                                  */
-/********************************************************************************************************/
-
 /* Reset default margin and padding */
 * {
 	margin: 0;
@@ -9,29 +5,27 @@
 	box-sizing: border-box;
 }
 
-/********************************************************************************************************/
-/*                                          CSS for Background                                          */
-/********************************************************************************************************/
-
+/* Background */
 body {
-	background: rgb(163,200,203);
-	background: linear-gradient(0deg, rgba(163,200,203,1) 0%, rgba(226,226,226,1) 57%, rgba(241,241,241,1) 75%, rgba(255,255,255,1) 100%);
-	background-size: cover; /* Cover the entire viewport */
-	font-family: Verdana, sans-serif; /* Default font family*/
+	background: rgb(163, 200, 203);
+	background: linear-gradient(0deg, rgba(163, 200, 203, 1) 0%, rgba(226, 226, 226, 1) 57%, rgba(241, 241, 241, 1) 75%, rgba(255, 255, 255, 1) 100%);
+	background-size: cover;
+	font-family: Verdana, sans-serif;
 }
 
-/********************************************************************************************************/
-/*                                           CSS for Buttons                                            */
-/********************************************************************************************************/
-
-#buttondark a {
+/* Buttons */
+#buttondark a,
+#buttonlight a {
 	display: inline-block;
-	background-color: #333;
-	color: #fff;
 	text-decoration: none;
 	padding: 10px 20px;
 	border-radius: 5px;
 	transition: background-color 0.3s ease;
+}
+
+#buttondark a {
+	background-color: #333;
+	color: #fff;
 }
 
 #buttondark a:hover {
@@ -40,11 +34,7 @@ body {
 }
 
 #buttonlight a {
-	display: inline-block;
 	color: #333;
-	text-decoration: none;
-	padding: 10px 20px;
-	border-radius: 5px;
 	background-color: rgba(100, 100, 100, 0.3);
 	border: 2px solid #1e192c;
 }
@@ -54,10 +44,7 @@ body {
 	background-color: #1e192c;
 }
 
-/********************************************************************************************************/
-/*                                      CSS for the Navigation Bar                                      */
-/********************************************************************************************************/
-
+/* Navigation Bar */
 nav {
 	background-color: #333;
 	padding: 10px 0;
@@ -78,15 +65,12 @@ nav ul li a {
 	color: #fff;
 }
 
-/********************************************************************************************************/
-/*                                      CSS for the Header Section                                      */
-/********************************************************************************************************/
-
+/* Header Section */
 header {
 	text-align: center;
 	padding: 20px 0;
-	background: rgb(226,226,226);
-	background: linear-gradient(180deg, rgba(226,226,226,1) 23%, rgba(241,241,241,1) 75%, rgba(250,250,250,1) 100%);
+	background: rgb(226, 226, 226);
+	background: linear-gradient(180deg, rgba(226, 226, 226, 1) 23%, rgba(241, 241, 241, 1) 75%, rgba(250, 250, 250, 1) 100%);
 }
 
 header h1 {
@@ -96,47 +80,33 @@ header h1 {
 	font-variant: small-caps;
 }
 
-header p {
+header p,
+header p2 {
 	font-family: 'Courier New', Courier, monospace;
 	font-size: 1.5em;
 }
 
 header p2 {
-	font-family: 'Courier New', Courier, monospace;
 	font-size: 3em;
 }
 
-/********************************************************************************************************/
-/*                                         CSS for the Sections                                         */
-/********************************************************************************************************/
-
-/* Default padding for sections */
+/* Sections */
 section {
-	padding: 20px 0; /* Adjust as needed */
+	padding: 20px 0;
 	text-align: center;
 }
 
+section h1,
 section h2 {
 	font-family: 'Courier New', Courier, monospace;
-	font-size: 2em;
 }
 
-section h1 {
-	font-family: 'Courier New', Courier, monospace;
-}
-
-/********************************************************************************************************/
-/*                                      CSS for the About Section                                      */
-/********************************************************************************************************/
-
+/* About Section */
 #about {
 	padding: 20px;
 }
 
-/********************************************************************************************************/
-/*                                      CSS for the Resume Section                                      */
-/********************************************************************************************************/
-
+/* Resume Section */
 #resume {
 	padding: 50px 0;
 }
@@ -146,10 +116,7 @@ section h1 {
 	margin-bottom: 20px;
 }
 
-/********************************************************************************************************/
-/*                                      CSS for the Portfolio Items                                     */
-/********************************************************************************************************/
-
+/* Portfolio Items */
 .portfolio-item {
 	margin-bottom: 30px;
 }
@@ -169,10 +136,7 @@ section h1 {
 	font-style: italic;
 }
 
-/********************************************************************************************************/
-/*                                        CSS for the Contact Form                                      */
-/********************************************************************************************************/
-
+/* Contact Form */
 form {
 	margin-top: 20px;
 }
@@ -223,10 +187,7 @@ button[type="submit"]:hover {
 	border: 2px solid #1e192c;
 }
 
-/********************************************************************************************************/
-/*                                      CSS for the Footer Section                                      */
-/********************************************************************************************************/
-
+/* Footer Section */
 footer {
 	background-color: #333;
 	color: #fff;
@@ -234,65 +195,55 @@ footer {
 	padding: 20px 0;
 }
 
-/********************************************************************************************************/
-/*                                      CSS for Social Media Icons                                      */
-/********************************************************************************************************/
-
+/* Social Media Icons */
 .social-icons-container {
-	text-align: center; /* Center the icons horizontally */
+	text-align: center;
 	margin: 50px auto; /* Default margin */
 }
 
 .social-icons,
 .social-media-icons {
-	list-style: none; /* Remove default list styles */
+	list-style: none;
 	padding: 0;
 	margin: 0;
 }
 
 .social-icons li,
 .social-media-icons a {
-	display: inline-block; /* Display list items in a row */
+	display: inline-block;
 	margin-right: 80px; /* Add spacing between icons */
 }
 
 .social-icons li:last-child,
 .social-media-icons a:last-child {
-	margin-right: 0; /* Remove margin from the last icon */
+	margin-right: 0;
 }
 
-/********************************************************************************************************/
-/*                                   MEDIA ENQUIRY FOR SMALLER SCREENS                                  */
-/********************************************************************************************************/
-
-/* SOCIAL ICONS */
+/* Media Queries */
 @media screen and (max-width: 768px) {
+	/* Social Media Icons */
 	.social-icons-container .social-icons li,
 	.social-icons-container .social-media-icons a {
-		margin-right: 10px; /* Reduced spacing between icons for smaller screens */
+		margin-right: 10px; /* Reduced spacing between icons */
 	}
 
 	.social-icons-container .social-icons img,
 	.social-icons-container .social-media-icons img {
-		width: 30px; /* Smaller icon size for smaller screens */
+		width: 30px; /* Smaller icon size */
 	}
-}
 
-/* H3 */
-@media screen and (max-width: 768px) {
-  .contact-item h3 {
-    margin-bottom: 10px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold; /* Make the titles bold */
-  }
+	/* Contact Form */
+	.contact-item h3 {
+		margin-bottom: 10px;
+		font-family: 'Courier New', Courier, monospace;
+		font-weight: bold; /* Make the titles bold */
+	}
 
-  .contact-item p {
-    margin: 10px 0; /* Add space between email and mobile */
-  }
-}
+	.contact-item p {
+		margin: 10px 0; /* Add space between email and mobile */
+	}
 
-/*SECTION PADDING*/
-@media screen and (max-width: 768px) {
+	/* Sections */
 	section {
 		padding: 10px 0; /* Reduced padding for smaller screens */
 	}
