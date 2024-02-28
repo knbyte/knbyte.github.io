@@ -181,4 +181,102 @@ section h1 {
 /********************************************************************************************************/
 
 form {
-	margin-top
+	margin-top: 20px;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	width: 60%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 2px solid #1e192c;
+	background-color: rgba(100, 100, 100, 0.3);
+	border-radius: 5px;
+}
+
+textarea {
+	height: 150px;
+}
+
+button[type="submit"] {
+	display: inline-block;
+	color: #333;
+	text-decoration: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	background-color: rgba(100, 100, 100, 0.3);
+	border: 2px solid #1e192c;
+	cursor: pointer;
+}
+
+button[type="submit"]:hover {
+	color: #ccc;
+	background-color: #1e192c;
+}
+
+#buttonlight a {
+	display: inline-block;
+	color: #333;
+	text-decoration: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	background-color: rgba(100, 100, 100, 0.3);
+	border: 2px solid #1e192c;
+}
+
+/********************************************************************************************************/
+/*                                      CSS for the Footer Section                                      */
+/********************************************************************************************************/
+
+footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 20px 0;
+}
+
+/********************************************************************************************************/
+/*                                      CSS for Social Media Icons                                      */
+/********************************************************************************************************/
+
+.social-icons-container {
+	text-align: center; /* Center the icons horizontally */
+	margin: 50px auto; /* Default margin */
+}
+
+.social-icons,
+.social-media-icons {
+	list-style: none; /* Remove default list styles */
+	padding: 0;
+	margin: 0;
+}
+
+.social-icons li,
+.social-media-icons a {
+	display: inline-block; /* Display list items in a row */
+	margin-right: 80px; /* Add spacing between icons */
+}
+
+.social-icons li:last-child,
+.social-media-icons a:last-child {
+	margin-right: 0; /* Remove margin from the last icon */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+	.social-icons-container .social-icons li,
+	.social-icons-container .social-media-icons a {
+		margin-right: 10px; /* Reduced spacing between icons for smaller screens */
+	}
+
+	.social-icons-container .social-icons img,
+	.social-icons-container .social-media-icons img {
+		width: 30px; /* Smaller icon size for smaller screens */
+	}
+}
