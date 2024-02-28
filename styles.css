@@ -25,15 +25,25 @@ body {
 /*                                           CSS for Buttons                                            */
 /********************************************************************************************************/
 
-/* Styles for buttons */
-#buttondark a,
 #buttonlight a {
-	display: inline-block; /* Displays elements as inline-block */
+	display: inline-block; /* Displays as block element */
 	text-decoration: none; /* Removes underline from links */
+	color: #333; /* Text color */
 	padding: 10px 20px; /* Sets padding */
 	border-radius: 5px; /* Adds rounded corners */
 	transition: background-color 0.3s ease; /* Smooth transition effect */
 	margin-top: 20px; /* Adds top margin */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+	border: 2px solid #1e192c; /* Border */
+	background: rgb(186,214,219);
+	background: radial-gradient(circle, rgba(186,214,219,0.5) 6%, rgba(167,197,202,0.5) 23%, rgba(163,200,203,0.5) 87%);
+	
+}
+
+#buttonlight a:hover {
+	color: #ccc; /* Text color on hover */
+	background-color: #1e192c; /* Background color on hover */
+	transition: background-color 0.3s ease; /* Smooth background color transition */
 }
 
 #buttondark a {
@@ -44,17 +54,6 @@ body {
 #buttondark a:hover {
 	background-color: #e2e2e2; /* Background color on hover */
 	color: #333; /* Text color on hover */
-}
-
-#buttonlight a {
-	color: #333; /* Text color */
-	background-color: rgba(100, 100, 100, 0.3); /* Background color with transparency */
-	border: 2px solid #1e192c; /* Border */
-}
-
-#buttonlight a:hover {
-	color: #ccc; /* Text color on hover */
-	background-color: #1e192c; /* Background color on hover */
 }
 
 /********************************************************************************************************/
@@ -83,6 +82,71 @@ nav ul li a {
 }
 
 /********************************************************************************************************/
+/*                                      CSS for Animations Section                                      */
+/********************************************************************************************************/
+
+/* Keyframes for Fade In Animation */
+@keyframes fadeIn {
+	from {
+	  opacity: 0;
+	}
+	to {
+	  opacity: 1;
+	}
+}
+
+/* Keyframes for Scale Up Animation */
+@keyframes scaleUp {
+	from {
+	  transform: scale(0);
+	}
+	to {
+	  transform: scale(1);
+	}
+}
+
+/* Keyframes for Slide In from Left Animation */
+@keyframes slideInLeft {
+	from {
+	  transform: translateX(-100%);
+	  opacity: 0;
+	}
+	to {
+	  transform: translateX(0);
+	  opacity: 1;
+	}
+}
+
+/* Keyframes for Rotate Animation */
+@keyframes rotate {
+	from {
+	  transform: rotate(0deg);
+	}
+	to {
+	  transform: rotate(360deg);
+	}
+}
+
+/* Keyframes for Blink Animation */
+@keyframes blink {
+	50% {
+	  opacity: 0;
+	}
+}
+
+/* Keyframes for Slide In Down Animation */
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/********************************************************************************************************/
 /*                                      CSS for the Header Section                                      */
 /********************************************************************************************************/
 
@@ -99,6 +163,9 @@ header h1 {
 	font-family: 'Courier New', Courier, monospace; /* Font family */
 	margin-bottom: 10px; /* Adds bottom margin */
 	font-variant: small-caps; /* Converts text to small caps */
+	text-shadow: 2px 2px 4px rgba(143, 79, 180, 0.4); /* Add a text shadow */
+	transform: scale(0);
+	animation: scaleUp 1.5s forwards; /* Apply scaleIn animation / 1.5s - duration of animation 1.5 seconds / forwards - ensures that the element remains in the last keyframe of the animation rather than reverting to original state after*/
 }
 
 header p,
@@ -111,34 +178,51 @@ header p2 {
 	font-size: 3em; /* Font size */
 }
 
+header p {
+	animation: slideInDown 1.5s forwards ease;
+}
+
 /********************************************************************************************************/
-/*                                         CSS for the Sections                                         */
+/*                                         CSS For the Sections                                         */
 /********************************************************************************************************/
 
 /* Styles for sections */
 section {
 	padding: 30px 0; /* Padding */
 	text-align: center; /* Aligns text to center */
+	opacity: 0; /* Initially hide the content */
 }
 
 section h2 {
 	font-family: 'Courier New', Courier, monospace; /* Font family */
 	font-size: 2em; /* Font size */
 	margin-bottom: 10px; /* Adds bottom margin */
+	text-shadow: 1.5px 1.5px 4px rgba(143, 79, 180, 0.4); /* Add a text shadow */
+	/* TEXT SHADOW INFO: 2px - horizontal offset / 2px - Vertical Offset / 8px - Blur Radius */
+	/* HEX #8f4fb4 = red143, green79, blue180 / alpha0.4 = 40% opacity*/
 }
 
-section h1 {
-	font-family: 'Courier New', Courier, monospace; /* Font family */
+/* SECTION FADE INS */
+
+.about-section {
+	opacity: 0; /* Initially hide the content */
+	animation: fadeIn 4s forwards; /* Apply the fadeIn animation */
+
 }
+.skills-section {
+	opacity: 0; /* Initially hide the content */
+	animation: fadeIn 6s forwards; /* Apply the fadeIn animation */
 
-/********************************************************************************************************/
-/*                                      CSS for the Resume Section                                      */
-/********************************************************************************************************/
+}
+.portfolio-section {
+	opacity: 0; /* Initially hide the content */
+	animation: fadeIn 8s forwards; /* Apply the fadeIn animation */
 
-/* Styles for the resume section */
-#resume h2 {
-	font-size: 2em; /* Font size */
-	margin-bottom: 20px; /* Adds bottom margin */
+}
+.social-section {
+	opacity: 0; /* Initially hide the content */
+	animation: fadeIn 10s forwards; /* Apply the fadeIn animation */
+
 }
 
 /********************************************************************************************************/
@@ -163,57 +247,6 @@ section h1 {
 
 .portfolio-item p {
 	font-style: italic; /* Sets text style to italic */
-}
-
-/* Contact Form */
-form {
-	margin-top: 20px; /* Adds top margin */
-}
-
-label {
-	display: block; /* Displays as block element */
-	margin-bottom: 5px; /* Adds bottom margin */
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-	width: 60%; /* Sets width */
-	padding: 10px; /* Adds padding */
-	margin-bottom: 15px; /* Adds bottom margin */
-	border: 2px solid #1e192c; /* Border */
-	background-color: rgba(100, 100, 100, 0.3); /* Background color with transparency */
-	border-radius: 5px; /* Adds rounded corners */
-}
-
-textarea {
-	height: 150px; /* Sets height */
-}
-
-button[type="submit"] {
-	display: inline-block; /* Displays as block element */
-	color: #333; /* Text color */
-	text-decoration: none; /* Removes underline */
-	padding: 10px 20px; /* Padding */
-	border-radius: 5px; /* Adds rounded corners */
-	background-color: rgba(100, 100, 100, 0.3); /* Background color with transparency */
-	border: 2px solid #1e192c; /* Border */
-	cursor: pointer; /* Changes cursor on hover */
-}
-
-button[type="submit"]:hover {
-	color: #ccc; /* Text color on hover */
-	background-color: #1e192c; /* Background color on hover */
-}
-
-#buttonlight a {
-	display: inline-block; /* Displays as block element */
-	color: #333; /* Text color */
-	text-decoration: none; /* Removes underline */
-	padding: 10px 20px; /* Padding */
-	border-radius: 5px; /* Adds rounded corners */
-	background-color: rgba(100, 100, 100, 0.3); /* Background color with transparency */
-	border: 2px solid #1e192c; /* Border */
 }
 
 /********************************************************************************************************/
@@ -289,3 +322,31 @@ footer {
 		padding: 10px 0; /* Reduced padding for smaller screens */
 	}
 }
+
+/********************************************************************************************************/
+/*                                                 LINKS                                                */
+/********************************************************************************************************/
+a {
+	color: #8f4fb4; /* Changing Colour of Links */
+	text-decoration: none; /* Removes underline */
+	transition: color 0.3s ease; /* Smooth color transition */
+    cursor: pointer; /* Change cursor to pointer on hover */
+	    color: #999; /* Change color of visited links */
+
+
+
+}
+
+a:hover {
+    color: #8f4fb4; /* Change color on hover */
+    text-decoration: underline; /* Underline on hover */
+    font-weight: bold; /* Make links bold */
+}
+
+a:visited {
+    color: #8f4fb4; /* Make it so visited links dont change colour */
+}
+
+/* a:visited { */
+    /* color: #999; /* Other version where it changed the colour - dont want to get rid of yet */
+/* } */
