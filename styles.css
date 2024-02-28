@@ -300,7 +300,12 @@ section {
 @media screen and (max-width: 768px) {
   .social-icons-container .social-icons li,
   .social-icons-container .social-media-icons a {
-    margin-right: 20px; /* Adjusted spacing between icons for smaller screens */
+    margin-right: 10px; /* Reduced spacing between icons for smaller screens */
+  }
+  
+  .social-icons-container .social-icons img,
+  .social-icons-container .social-media-icons img {
+    width: 30px; /* Smaller icon size for smaller screens */
   }
 }
 
