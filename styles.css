@@ -246,8 +246,6 @@ body {
 /********************************************************************************************************/
 /*                                      CSS for Social Media Icons                                      */
 /********************************************************************************************************/
-
-
 /* CSS for Social Media Icons */
 .social-icons-container {
   text-align: center; /* Center the icons horizontally */
@@ -263,7 +261,7 @@ body {
 .social-icons li,
 .social-media-icons a {
   display: inline-block; /* Display list items in a row */
-  margin-right: 10px; /* Add spacing between icons */
+  margin-right: 80px; /* Add spacing between icons */
 }
 
 .social-icons li:last-child,
@@ -280,19 +278,22 @@ body {
 }
 
 .contact-item {
-  flex: 1;
+  width: 200px; /* Fixed width for each contact item */
   padding: 20px;
-  margin: 0 10px; /* Add margin between items */
+  margin: 0 25px; /* Adjusted margin between items */
   box-sizing: border-box; /* Include padding and border in the width */
+}
+.contact-item:first-child {
+  margin-right: 50px; /* Add margin after the first contact item */
 }
 
 .contact-item:last-child {
-  margin-right: 0; /* Remove margin from the last item */
+  margin-right: 25px; /* Add margin to align with the last social media icon */
 }
 
 .contact-item h3 {
   margin-bottom: 10px;
-  font-family: 'Courier New', Courier, monospace
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .contact-item p {
