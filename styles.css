@@ -83,14 +83,16 @@ nav li {
 .skills-section,
 .portfolio-section,
 .social-section {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* White color with 80% opacity */
+    padding: 20px; /* Add padding to create some space around the content */
+    border-radius: 10px; /* Add rounded corners to the box */
     margin: 30px auto; /* Center the section and add top and bottom margin */
-    max-width: 800px;
-    border: 2px solid #333;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px; /* Adjust the maximum width of the section */
+    border: 2px solid #333; /* Dark border around the section */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
 }
+
+
 
 .skills-list {
     list-style: none;
@@ -158,6 +160,34 @@ header p2 {
 	font-size: 3em; /* Font size */
 }
 
+section h3 {
+    font-family: 'Great Vibes=', cursive;
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    text-shadow: 1.5px 1.5px 4px rgba(143, 79, 180, 0.4);
+    
+}
+
+section p {
+    font-size: 1em; 
+}
+
+section li {
+    font-size: 1em; 
+}
+
+.grid-item h3 {
+    text-align: left;
+}
+
+.portfolio-item h3 {
+    text-align: centre;
+}
+.portfolio-item p {
+    text-align: center;
+}
+
 /********************************************************************************************************/
 /*                                          LAYOUT                                                        */
 /********************************************************************************************************/
@@ -166,6 +196,31 @@ header p2 {
     text-align: center; /* Aligns text to center */
     margin: 50px auto; /* Sets top and bottom margin, auto left and right margin */
 }
+/*LIST STUFF:*/
+/* Grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
+    gap: 20px; /* Gap between grid items */
+}
+
+/* Grid items */
+.grid-item {
+    padding: 20px; /* Padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* List style */
+.grid-item ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+/* List items */
+.grid-item ul li {
+    margin-bottom: 5px; /* Margin between list items */
+}
+
 
 /********************************************************************************************************/
 /*                                      CSS for the Navigation Bar                                      */
@@ -330,3 +385,38 @@ a:visited {
 
 
 
+/********************************************************************************************************/
+/*                                      CSS for the Header Section                                      */
+/********************************************************************************************************/
+
+/* Styles for the header section from old css file as the above wont work and i do not know why */
+header {
+	text-align: center; /* Aligns text to center */
+	padding: 20px 0; /* Padding */
+	background: rgb(226, 226, 226); /* Background color */
+	background: linear-gradient(180deg, rgba(226, 226, 226, 1) 23%, rgba(241, 241, 241, 1) 75%, rgba(250, 250, 250, 1) 100%); /* Gradient background */
+}
+
+header h1 {
+	font-size: 4.0em; /* Font size */
+	font-family: 'Courier New', Courier, monospace; /* Font family */
+	margin-bottom: 10px; /* Adds bottom margin */
+	font-variant: small-caps; /* Converts text to small caps */
+	text-shadow: 2px 2px 4px rgba(143, 79, 180, 0.4); /* Add a text shadow */
+	transform: scale(0);
+	animation: scaleUp 1.5s forwards; /* Apply scaleIn animation / 1.5s - duration of animation 1.5 seconds / forwards - ensures that the element remains in the last keyframe of the animation rather than reverting to original state after*/
+}
+
+header p,
+header p2 {
+	font-family: 'Courier New', Courier, monospace; /* Font family */
+	font-size: 1.5em; /* Font size */
+}
+
+header p2 {
+	font-size: 3em; /* Font size */
+}
+
+header p {
+	animation: slideInDown 1.5s forwards ease;
+}
