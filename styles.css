@@ -1,0 +1,332 @@
+/*------------------------------------------------------------------------------------------------------------*/
+/*                                             NOTES: CSS                                                   */
+/*                                                                                                            */
+/* CSS (Cascading Style Sheets) is used for styling the HTML content. It defines the presentation, layout,   */
+/* and design of the web pages.                                                                              */
+/*                                                                                                            */
+/* The style.css file contains rules that dictate how elements on the webpage should be displayed.            */
+/*                                                                                                            */
+/*                                            STYLESHEET LINK                                                 */
+/*                                                                                                            */
+/* <link rel="stylesheet" href="styles.css">                                                                 */
+/*                                                                                                            */
+/* This link tag is placed in the <head> section of the HTML document to link the HTML file with the external */
+/* CSS file ('styles.css'). It applies the styles defined in 'styles.css' to the HTML content.                */
+/*                                                                                                            */
+/*                                           BASIC SYNTAX                                                    */
+/*                                                                                                            */
+/* CSS rules are comprised of selectors and declarations:                                                     */
+/* - Selectors: Target HTML elements to style.                                                                */
+/* - Declarations: Specify the styles to apply to the selected elements.                                       */
+/*                                                                                                            */
+/* Example CSS rule:                                                                                         */
+/* .element {                                                                                                 */
+/*     property: value;                                                                                       */
+/* }                                                                                                          */
+/*                                                                                                            */
+/* .element is a selector targeting elements with class "element".                                             */
+/* property: value; is a declaration specifying the style property and its value.                              */
+/*                                                                                                            */
+/* Multiple declarations can be included within a single CSS rule, each separated by a semicolon.             */
+/*------------------------------------------------------------------------------------------------------------*/
+
+/********************************************************************************************************/
+/*                                               DEFAULTS                                                 */
+/********************************************************************************************************/
+
+* {
+	margin: 0; /* Sets margin to 0 */
+	padding: 0; /* Sets padding to 0 */
+	box-sizing: border-box; /* Includes padding and border in element's total width and height */
+}
+
+/********************************************************************************************************/
+/*                                              STYLES                                                    */
+/********************************************************************************************************/
+
+body {
+    background: rgb(163, 200, 203);
+    background: linear-gradient(0deg, rgba(163, 200, 203, 1) 0%, rgba(226, 226, 226, 1) 57%, rgba(241, 241, 241, 1) 75%, rgba(255, 255, 255, 1) 100%);
+    background-size: cover;
+    font-family: Verdana, sans-serif;
+}
+
+.section {
+    padding: 30px 0;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background: rgb(226, 226, 226);
+    background: linear-gradient(180deg, rgba(226, 226, 226, 1) 23%, rgba(241, 241, 241, 1) 75%, rgba(250, 250, 250, 1) 100%); /* Gradient background */
+}
+
+.nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+.about-section,
+.skills-section,
+.portfolio-section,
+.social-section {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px auto; /* Center the section and add top and bottom margin */
+    max-width: 800px;
+    border: 2px solid #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skills-list {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.social-icons,
+.social-media-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.social-icons li,
+.social-media-icons a {
+    display: inline-block;
+    margin-right: 80px;
+}
+.social-icons li:last-child,
+.social-media-icons a:last-child {
+    margin-right: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/********************************************************************************************************/
+/*                                          TYPOGRAPHY                                                    */
+/********************************************************************************************************/
+
+header h1 {
+    font-size: 4.0em;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 10px;
+    font-variant: small-caps;
+    text-shadow: 2px 2px 4px rgba(143, 79, 180, 0.4);
+    transform: scale(0);
+    animation: scaleUp 1.5s forwards; /* forwards stops reverting to original state and keeps element as the last keyframe of the animation */
+}
+
+section h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-shadow: 1.5px 1.5px 4px rgba(143, 79, 180, 0.4);
+    /* TEXT SHADOW INFO: 2px - horizontal offset / 2px - Vertical Offset / 8px - Blur Radius */
+    /* HEX #8f4fb4 = red143, green79, blue180 / alpha0.4 = 40% opacity*/
+}
+
+header p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    animation: slideInDown 1.5s forwards ease;
+}
+
+header p2 {
+	font-size: 3em; /* Font size */
+}
+
+/********************************************************************************************************/
+/*                                          LAYOUT                                                        */
+/********************************************************************************************************/
+
+.social-icons-container {
+    text-align: center; /* Aligns text to center */
+    margin: 50px auto; /* Sets top and bottom margin, auto left and right margin */
+}
+
+/********************************************************************************************************/
+/*                                      CSS for the Navigation Bar                                      */
+/********************************************************************************************************/
+
+/* Styles for the navigation bar */
+nav {
+	background-color: #333; /* Background color */
+	padding: 10px 0; /* Padding */
+}
+
+nav ul {
+	list-style-type: none; /* Removes default list style */
+	text-align: center; /* Aligns text to center */
+}
+
+nav ul li {
+	display: inline; /* Displays list items inline */
+	margin-right: 20px; /* Adds right margin */
+	text-transform: uppercase;
+
+}
+
+nav ul li a {
+	text-decoration: none; /* Removes underline from links */
+	color: #fff; /* Text color */
+	text-decoration: none; /* Removes underline */
+	transition: color 0.3s ease; /* Smooth color transition */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+nav ul li a:hover {
+    color: #8f4fb4; /* Change color on hover */
+    text-decoration: underline; /* Underline on hover */
+    font-weight: bold; /* Make links bold */
+	text-transform: uppercase;
+}
+nav ul li a:visited {
+    color: #fff; /* Make it so visited links dont change colour */
+}
+/********************************************************************************************************/
+/*                                      ANIMATION KEYFRAMES                                              */
+/********************************************************************************************************/
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes scaleUp {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/********************************************************************************************************/
+/*                                   MEDIA ENQUIRY FOR SMALLER SCREENS                                  */
+/********************************************************************************************************/
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+	/* Social Media Icons */
+	.social-icons-container .social-icons li,
+	.social-icons-container .social-media-icons a {
+		margin-right: 10px; /* Reduced spacing between icons */
+	}
+
+	.social-icons-container .social-icons img,
+	.social-icons-container .social-media-icons img {
+		width: 30px; /* Smaller icon size */
+	}
+
+	.contact-item h3 {
+		margin-bottom: 10px; /* Adds bottom margin */
+		font-family: 'Courier New', Courier, monospace; /* Font family */
+		font-weight: bold; /* Sets font weight to bold */
+	}
+
+	.contact-item p {
+		margin: 10px 0; /* Adds margin */
+	}
+
+	/* Sections */
+	section {
+		padding: 10px 0; /* Reduced padding for smaller screens */
+	}
+}
+
+/********************************************************************************************************/
+/*                                                 LINKS & BUTTONS                                                */
+/********************************************************************************************************/
+a {
+	color: #8f4fb4; /* Changing Colour of Links */
+	text-decoration: none; /* Removes underline */
+	transition: color 0.3s ease; /* Smooth color transition */
+    cursor: pointer; /* Change cursor to pointer on hover */
+	    color: #999; /* Change color of visited links */
+}
+
+a:hover {
+    color: #8f4fb4; /* Change color on hover */
+    text-decoration: underline; /* Underline on hover */
+    font-weight: bold; /* Make links bold */
+}
+
+a:visited {
+    color: #8f4fb4; /* Make it so visited links dont change colour */
+}
+
+#buttonlight a {
+	display: inline-block; /* Displays as block element */
+	text-decoration: none; /* Removes underline from links */
+	color: #333; /* Text color */
+	padding: 10px 20px; /* Sets padding */
+	border-radius: 5px; /* Adds rounded corners */
+	transition: background-color 0.3s ease; /* Smooth transition effect */
+	margin-top: 20px; /* Adds top margin */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+	border: 2px solid #1e192c; /* Border */
+	background: rgb(186,214,219);
+	background: radial-gradient(circle, rgba(186,214,219,0.5) 6%, rgba(167,197,202,0.5) 23%, rgba(163,200,203,0.5) 87%);
+	
+}
+
+#buttonlight a:hover {
+	color: #ccc; /* Text color on hover */
+	background-color: #1e192c; /* Background color on hover */
+	transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+
+
+
+
+
+
+
+
+
