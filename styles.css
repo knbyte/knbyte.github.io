@@ -202,28 +202,6 @@ section h2 {
 	/* HEX #8f4fb4 = red143, green79, blue180 / alpha0.4 = 40% opacity*/
 }
 
-/* SECTION FADE INS */
-
-.about-section {
-	opacity: 0; /* Initially hide the content */
-	animation: fadeIn 4s forwards; /* Apply the fadeIn animation */
-
-}
-.skills-section {
-	opacity: 0; /* Initially hide the content */
-	animation: fadeIn 6s forwards; /* Apply the fadeIn animation */
-
-}
-.portfolio-section {
-	opacity: 0; /* Initially hide the content */
-	animation: fadeIn 8s forwards; /* Apply the fadeIn animation */
-
-}
-.social-section {
-	opacity: 0; /* Initially hide the content */
-	animation: fadeIn 10s forwards; /* Apply the fadeIn animation */
-
-}
 
 /********************************************************************************************************/
 /*                                      CSS for the Portfolio Items                                     */
