@@ -74,11 +74,25 @@ nav ul {
 nav ul li {
 	display: inline; /* Displays list items inline */
 	margin-right: 20px; /* Adds right margin */
+	text-transform: uppercase;
+
 }
 
 nav ul li a {
 	text-decoration: none; /* Removes underline from links */
 	color: #fff; /* Text color */
+	text-decoration: none; /* Removes underline */
+	transition: color 0.3s ease; /* Smooth color transition */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+nav ul li a:hover {
+    color: #8f4fb4; /* Change color on hover */
+    text-decoration: underline; /* Underline on hover */
+    font-weight: bold; /* Make links bold */
+	text-transform: uppercase;
+}
+nav ul li a:visited {
+    color: #fff; /* Make it so visited links dont change colour */
 }
 
 /********************************************************************************************************/
@@ -201,6 +215,60 @@ section h2 {
 	/* HEX #8f4fb4 = red143, green79, blue180 / alpha0.4 = 40% opacity*/
 }
 
+/************************/
+/*   SECTION STYLES     */
+/************************/
+
+.about-section,
+.skills-section,
+.portfolio-section,
+.social-section {
+    background-color: rgba(255, 255, 255, 0.8); /* White color with 80% opacity */
+    padding: 20px; /* Add padding to create some space around the content */
+    border-radius: 10px; /* Add rounded corners to the box */
+    margin: 30px auto; /* Center the section and add top and bottom margin */
+    max-width: 800px; /* Limit the maximum width of the section */
+    border: 2px solid #333; /* Dark border around the section */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+.skills-list {
+    list-style: none; /* Remove bullet points */
+    padding-left: 0; /* Remove default left padding */
+    text-align: center
+}
+
+.skills h3 {
+	font-family: 'URW Chancery L', 'cursive';
+  }
+/************************/
+/*   SECTION FADE INS   */
+/************************/
+
+.about-section {
+    opacity: 0; /* Initially hide the content */
+    animation: fadeIn 1.5s forwards; /* Apply the fadeIn animation */
+    animation-delay: 0s; /* No delay for the first section */
+}
+
+.skills-section {
+    opacity: 0; /* Initially hide the content */
+    animation: fadeIn 1.5s forwards; /* Apply the fadeIn animation */
+    animation-delay: 4s; /* Delay the animation by 4 seconds */
+}
+
+.portfolio-section {
+    opacity: 0; /* Initially hide the content */
+    animation: fadeIn 1.5s forwards; /* Apply the fadeIn animation */
+    animation-delay: 8s; /* Delay the animation by 8 seconds */
+}
+
+.social-section {
+    opacity: 0; /* Initially hide the content */
+    animation: fadeIn 1.5s forwards; /* Apply the fadeIn animation */
+    animation-delay: 12s; /* Delay the animation by 12 seconds */
+}
+
 
 /********************************************************************************************************/
 /*                                      CSS for the Portfolio Items                                     */
@@ -319,7 +387,3 @@ a:hover {
 a:visited {
     color: #8f4fb4; /* Make it so visited links dont change colour */
 }
-
-/* a:visited { */
-    /* color: #999; /* Other version where it changed the colour - dont want to get rid of yet */
-/* } */
