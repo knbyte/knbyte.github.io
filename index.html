@@ -1,178 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kai Aydan's Linktree</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+    <style>
+        header, footer {
+            background-color: transparent;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: rgb(2,0,36);
+            background: linear-gradient(153deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: transparent;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-family: "Sniglet", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            color: #7394db;
+            text-decoration: underline;
+            text-decoration-style: wavy;
+            text-decoration-color: #c673db;
+            
+        }
+        .link {
+            display: block;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: transparent;
+            border-radius: 5px;
+            text-align: center;
+            font-family: 'Pacifico', cursive;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            font-size: x-large;
+            color: #7394db;
+        }
+
+        .link:hover {
+            background-color: transparent;
+            color: #c673db;
+        }
+    </style>
 </head>
 <body>
-
-<!------------------------------------------------------------------------------------------------------------>
-<!--                                             Navigation Bar                                             -->
-<!------------------------------------------------------------------------------------------------------------>
-<nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#socials-and-contact">Socials & Contact</a></li>
-    </ul>
-  </nav>
-  
-
-<!------------------------------------------------------------------------------------------------------------>
-<!--                                             Header Section                                             -->
-<!------------------------------------------------------------------------------------------------------------>
-<header id="home">
-    <p>Welcome to the Portfolio of</p>
-    <h1>Kai Aydan North</h1>
-    <p2>─── ✧⋅☾⋅✧ ──</p2><br>
-<!--<p2>─── ｡✧⋅☾⋅✧｡ ──</p2>-->
-  </header>
-
-<!------------------------------------------------------------------------------------------------------------>
-<!--                                             About Section                                              -->
-<!------------------------------------------------------------------------------------------------------------>
-<section id="about">
-  <h2>About Me</h2>
-  <div class="about-content">
-    <p> Hi there! My name is Kai, and I'm passionate about accessibility and inclusion, both in workplaces <br>
-      and everyday life. I firmly believe that everyone deserves equal opportunities and access to resources, <br>
-      regardless of their background, circumstances or abilities.</p>
-      <br>
-    <p> I started my career working in call centers, initially in job coaching and later in supporting students <br>
-      with their studies by providing and assisting them in getting their Unique Student Identifier numbers (USIs).<br>
-      Through these experiences, I developed a deep understanding of the importance of accessibility and the challenges <br>
-      faced by individuals in accessing education and employment opportunities.</p>
-    <br>
-    <p> One of my key strengths is my ability to connect with people. I enjoy building relationships and creating <br>
-      a supportive environment where everyone feels valued and included. Additionally, my creativity allows me to think <br>
-      outside the box and come up with innovative solutions to problems.</p>
-    <br>
-    <p>Currently, I am studying at 42 The Programming School to develop new skills. <br>
-      I enjoy tacking coding problems creatively from new angles.</p>
-    <br>
-    <p> One day I would love to have the opportunity to leverage the new skills I am developing <br>
-      and passion for accessibility to create more inclusive technologies and environments.</p>
-    <br>
-    <p> If you would like to see my past work experience, you can download a copy of my resume by clicking the button below!</p>
-    <element id="buttonlight"><a href="Documents/Kai-North-Resume.pdf" download="KaiAydanResume.pdf">Resume Download</a></element>
-  </div>
-</section>
-
-<!------------------------------------------------------------------------------------------------------------>
-<!--                                             Skills Section                                             -->
-<!------------------------------------------------------------------------------------------------------------>
-<section id="skills">
-  <h2>My Skills</h2>
-  <h3>Programing</h3>
-  <ul>
-    <li>C</li>
-    <li>Html</li>
-    <li>CSS</li>
-    <li>Visual Studio Code</li>
-    <li>iTerm2</li>
-    <li>Windows Terminal</li>
-    <li>Vim</li>
-  </ul>
-  <br>
-  <h3>Work Experience</h3>
-  <ul>
-    <li>Inbound & Outbound Contact Centre</li>
-    <li>Job Coaching</li>
-    <li>Administration</li>
-    <li>Showroom/Front of House</li>
-    <li>Market Sales</li>
-  </ul>
-  <br>
-  <h3>Interpersonal</h3>
-  <ul>
-    <li>Tactful Dispute & Conflict Resolution</li>
-    <li>Compassion & Empathy</li>
-    <li>Creative Problem Solving</li>
-    <li>Providing a Positive User/Customer Experience</li>
-    <li>Contributing to a Healthy Work Environment</li>
-    <li>Going Above and Beyond to Assist Both Coworkers & Clients.</li>
-  </ul>
-</section>
-
-<!------------------------------------------------------------------------------------------------------------>
-<!--                                           Portfolio Section                                            -->
-<!------------------------------------------------------------------------------------------------------------>
-<section id="portfolio">
-    <h2>Portfolio</h2>
-    <div class="portfolio-item">
-      <h3>Resources Website</h3>
-      <p>During my time as a job coach I saw how a lot of people struggled with resume building.<br>
-        It was a part of my job to help clients get basic resumes together, but there was never sufficient time given their starting points. <br>
-        In personal time I developed a website containing resume templates I designed as well as providing guides showing other resources <br>
-        for job searching, housing and various other support information.</p>
-      <p>The website is not currently up, but below is a downloadable version of what it looked like along with some of the resources I created!</p>
-      <element id="buttonlight"><a href="Documents/Website/..." download="...." class="buttton">Download the website</a></element>
-      <element id="buttonlight"><a href="Documents/Website/..." download="...." class="buttton">Download the resources</a></element>
-      <br>
-      <div class="portfolio-item">
-        <h3>Guide to Customising iTerm2 & Vim</h3>
-        <p>During the 42 Pisine (Programming bootcamp to become a student at the school), (<a href="https://github.com/JogDog77">one of the other students</a>) and I <br>
-          created a resourse to help everyone customise their terminals and vim pages to make everything more readable and user friendly. <br>
-          You can download the pdf below to have a look!</p>
-          <element id="buttonlight"><a href="Documents/Customising Vim & iTerm.pdf" download="CustomisingVim&Iterm">Download PDF</a></element>
-        </div>
-      <br>
-      <div class="portfolio-item">
-       <h3>UniHack</h3>
-        <p> For the UniHack Hackathon (March 2024) my team....</p>
-        <element id="buttonlight"><a href="https://github.com/knbyte" target="_blank" class="button">View on GitHub</a></element>
-      </div>
-      <br>
-      <div class="portfolio-item">
-        <h3>42 Libft Project</h3>
-        <p>I created my own C Library containing my recreations of various Libc functions along with several other non-standard functions.</p>
-        <element id="buttonlight"><a href="https://github.com/knbyte" target="_blank" class="button">View on GitHub</a></element>
-      </div>
-      <br>
-    <div class="portfolio-item">
-      <h3>Portfolio Item</h3>
-      <p>Description</p>
-      <element id="buttonlight"><a href="https://github.com/knbyte" target="_blank" class="button">View on GitHub</a></element>
+    <div class="container">
+        <h1>Kai Aydan's Linktree</h1>
+        <a href="https://Portfolio.knbyte.site" class="link">Portfolio</a>
+        <a href="https://github.com/knbyte" class="link">GitHub</a>
+        <a href="https://ThinkSmall.knbyte.site" class="link">ThinkSmall</a>
+        <a href="https://SupportHub.knbyte.site" class="link">ResourceHub</a>
+        <a href="https://github.com/knbyte/42_Piscine/blob/main/Resources/Extra%20Resources/Customising%20Vim%20%26%20iTerm.pdf" class="link">Customising iTerm & Vim Guide</a>
     </div>
-    <br>
-  </section>
-
-<!------------------------------------------------------------------------------------------------------------>
-<!--                                          Social Media & Contact Section                                          -->
-<!------------------------------------------------------------------------------------------------------------>
-<section id="socials-and-contact">
-  <h2>Social Media & Contact Details</h2>
-  <div class="social-icons-container">
-    <ul class="social-icons">
-      <li><a href="https://www.linkedin.com/in/kai-aydan-north/" target="_blank"><img src="pngs/linkedin.png" alt="LinkedIn"></a></li>
-      <li><a href="https://github.com/knbyte" target="_blank"><img src="pngs/github.png" alt="GitHub"></a></li>
-      <li><a href="https://www.seek.com.au/profile/kai-north-HBrFDf6SXZ" target="_blank"><img src="pngs/seek.png" alt="Seek"></a></li>
-      <li><a href="https://www.instagram.com/c0smic_pr0blem" target="_blank"><img src="pngs/instagram.png" alt="Instagram"></a></li>
-      <li><a href="https://dribbble.com/knbyte" target="_blank"><img src="pngs/dribbble.png" alt="Dribbble"></a></li>
-    </ul>
-  </div>
-<!-- Contact Info -->
-<div class="contact-info">
-  <div class="contact-item">
-    <h3>Email:</h3>
-    <p>kaiaydan413@gmail.com</p>
-  </div>
-  <div class="contact-item">
-    <h3>Mobile:</h3>
-    <p>0421 574 196</p>
-  </div>
-</div>
-</section>
-
-<!------------------------------------------------------------------------------------------------------------>
-<!--                                             Footer Section                                             -->
-<!------------------------------------------------------------------------------------------------------------>
-<footer>
-    <p>&copy; 2024 Kai Aydan Portfolio. All rights reserved.</p>
-  </footer>
-
 </body>
 </html>
