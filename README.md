@@ -9,15 +9,3 @@ Kai's Linktree serves as a centralized hub for accessing Kai's online presence. 
 ## How to Use
 
 Simply click each link to be taken to the corresponding page.
-
-## Contact
-
-For inquiries, collaborations, or any other questions, feel free to reach out to Kai Aydan via email at kaiaydan413@gmail.com.
-
-## Connect
-
-- [Instagram](https://www.instagram.com/yourusername/)
-- [Twitter](https://twitter.com/yourusername/)
-- [LinkedIn](https://www.linkedin.com/in/yourusername/)
-- [YouTube](https://www.youtube.com/yourchannel)
-- [Twitch](https://www.twitch.tv/yourchannel)
